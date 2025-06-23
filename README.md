@@ -57,7 +57,7 @@ ax = plt.subplot(111, frame_on=False)
 ax.xaxis.set_visible(False) 
 ax.yaxis.set_visible(False)
 table(ax,Planet_info[["pl_orbsmax","pl_rade","pl_name"]] , loc="center")
-plt.savefig("Habitable_planets.png")
+plt.savefig("habitable_planets.png")
 plt.show()
 ```
-
+<img src="habitable_planets.png" alt="Plot" width="80%"/>
