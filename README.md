@@ -53,11 +53,34 @@ Planet = Data[(Data["pl_orbsmax"] > 0.7) & (Data["pl_orbsmax"] < 1.3) & (Data["p
 Planet_name = Planet["pl_name"].unique()
 Planet_info = Planet[Planet["pl_name"].isin(Planet_name)]
 
-ax = plt.subplot(111, frame_on=False)
-ax.xaxis.set_visible(False) 
-ax.yaxis.set_visible(False)
-table(ax,Planet_info[["pl_orbsmax","pl_rade","pl_name"]] , loc="center")
-plt.savefig("habitable_planets.png")
+#combined with earth information 
+Earth_df = pd.DataFrame({'pl_name': ['Earth'],'pl_orbsmax' : [0.99992], 'pl_rade': [1.0]})
+Cut_planet_info = Planet_info[["pl_name","pl_orbsmax","pl_rade"]]
+Combined_df = pd.concat([Cut_planet_info, Earth_df], ignore_index = True)
+
+fig2, ax2 = plt.subplots(figsize=(8, 2))
+ax2.axis('off')
+table(ax2, Combined_df, loc="center")
+plt.savefig("table.png")
 plt.show()
 ```
-<img src="habitable_planets.png" alt="Plot" width="80%"/>
+<img src="habitable_planet.png" alt="Plot" width="80%"/>
+We can indicate the Kepler-452 b exoplanet on the previous orbital vs planetary radius graph. 
+```python
+#identify the planet on the graph 
+plt.plot(orbitalradius, planetaryradius, marker = '.', linestyle = '', color = 'c', label = 'Planets')
+plt.ylabel("planetary radius [Earth radii]")
+plt.xlabel("orbital semi-major axis[au]")
+plt.title("orbital radius vs planetary radius")
+plt.yscale('log')
+plt.xscale('log')
+plt.legend()
+
+kepler_orbital = np.array([0.9940, 0.9892])
+kepler_planetary = np.array([1.09, 1.13])
+plt.scatter(kepler_orbital, kepler_planetary, color = "red")
+plt.text(kepler_orbital[1], kepler_planetary[1], "Kepler-452 b", ha = 'left', fontsize = 12)
+plt.savefig("kepler.png")
+plt.show()
+```
+<img src="kepler.png" alt="Plot" width="80%"/>
