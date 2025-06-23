@@ -93,4 +93,4 @@ The Kepler-452 b, an exoplanet nicknamed 'Earth's Cousin', is 1799 light years a
 
 *Info@ https://science.nasa.gov/exoplanet-catalog/kepler-452-b/*
 
-run the project in Jupyter Notebooks: [View Potentially Habitable Exoplanets ](Potentially Habitable Exoplanets.ipynb)]
+run the project in Jupyter Notebooks: [View Potentially_Habitable_Exoplanets.ipynb](Potentially_Habitable_Exoplanets.ipynb)]
