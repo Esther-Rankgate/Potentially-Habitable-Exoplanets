@@ -92,3 +92,5 @@ plt.show()
 The Kepler-452 b, an exoplanet nicknamed 'Earth's Cousin', is 1799 light years away from earth. It orbits a star, Kepler 452, just as earth orbits the sun and has 364.8 days in a year. The planet was discovered in 2015 by the Kepler Space Telescope launched by NASA in 2009 with the mission of identifying earth-sized planets orbiting other stars ouside our galaxy. 
 
 *Info@ https://science.nasa.gov/exoplanet-catalog/kepler-452-b/*
+
+run the project in Jupyter Notebooks: [View Potentially Habitable Exoplanets ](Potentially Habitable Exoplanets.ipynb)]
