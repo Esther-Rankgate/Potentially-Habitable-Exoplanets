@@ -35,6 +35,7 @@ ax1.set_xlabel("orbital semi-major axis[au]")
 ax1.set_title("orbital radius vs planetary radius")
 ax1.set_yscale('log')
 ax1.set_xscale('log')
+plt.savefig("Nasa_archive.png")
 plt.show()
 ```
 <img src="NASA_archives.png" alt="Plot" width="80%"/>
@@ -56,7 +57,7 @@ ax = plt.subplot(111, frame_on=False)
 ax.xaxis.set_visible(False) 
 ax.yaxis.set_visible(False)
 table(ax,Planet_info[["pl_orbsmax","pl_rade","pl_name"]] , loc="center")
-plt.savefig("table.png")
+plt.savefig("Habitable_planets.png")
 plt.show()
 ```
 
