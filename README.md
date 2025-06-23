@@ -1,5 +1,5 @@
 # Potentially Habitable Exoplanets 
-Simple python task to identify a potentially habitable exoplanet from the NASA archives. 
+Simple Python task to identify a potentially habitable exoplanet from the NASA planetary archives *[date of access: 2024]*. 
 
 ## Modules used: 
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=matplotlib&logoColor=white)
@@ -43,8 +43,9 @@ Habital exoplanets will have similar a planetary and orbital radius to that of E
 
 ```python
 #Planetary analysis
-Info2 = Data[(Data["pl_orbsmax"] > 0.7) & (Data["pl_orbsmax"] < 1.3) & (Data["pl_rade"] > 0.7) & (Data["pl_rade"] < 1.3)]
-Info4 = Info2["pl_name"].unique()
+Planet = Data[(Data["pl_orbsmax"] > 0.7) & (Data["pl_orbsmax"] < 1.3) & (Data["pl_rade"] > 0.7) & (Data["pl_rade"] < 1.3)]
+Planet_name = Planet["pl_name"].unique()
+Planet_info = Planet[Planet["pl_name"].isin(Planet_name)]
 ```
 From this, it is found that only one planet in NASA's database could be a candidate for habitability: **The Kepler-452 b**
 ```python
@@ -65,7 +66,8 @@ plt.savefig("table.png")
 plt.show()
 ```
 <img src="habitable_planet.png" alt="Plot" width="80%"/>
-We can indicate the Kepler-452 b exoplanet on the previous orbital vs planetary radius graph. 
+Tthe Kepler-452 b exoplanet can be identified on the previous orbital vs planetary radius graph. 
+
 ```python
 #identify the planet on the graph 
 plt.plot(orbitalradius, planetaryradius, marker = '.', linestyle = '', color = 'c', label = 'Planets')
@@ -83,4 +85,10 @@ plt.text(kepler_orbital[1], kepler_planetary[1], "Kepler-452 b", ha = 'left', fo
 plt.savefig("kepler.png")
 plt.show()
 ```
+
 <img src="kepler.png" alt="Plot" width="80%"/>
+
+## Kepler-452 b 
+The Kepler-452 b, an exoplanet nicknamed 'Earth's Cousin', is 1799 light years away from earth. It orbits a star, Kepler 452, just as earth orbits the sun and has 364.8 days in a year. The planet was discovered in 2015 by the Kepler Space Telescope launched by NASA in 2009 with the mission of identifying earth-sized planets orbiting other stars ouside our galaxy. 
+
+*Info@ https://science.nasa.gov/exoplanet-catalog/kepler-452-b/*
