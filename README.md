@@ -38,7 +38,7 @@ ax1.set_xscale('log')
 plt.savefig("Nasa_archive.png")
 plt.show()
 ```
-<img src="NASA_archives.png" alt="Plot" width="80%"/>
+<img src="images/NASA_archives.png" alt="Plot" width="80%"/>
 Habital exoplanets will have similar a planetary and orbital radius to that of Earths. The earth has a planetary radius of 1 [earth radii] and an orbital semi major axis of 0.99992 [au]. We are looking for a planet with data near these values. 
 
 ```python
@@ -65,7 +65,7 @@ table(ax2, Combined_df, loc="center")
 plt.savefig("table.png")
 plt.show()
 ```
-<img src="habitable_planet.png" alt="Plot" width="80%"/>
+<img src="images/habitable_planet.png" alt="Plot" width="80%"/>
 Tthe Kepler-452 b exoplanet can be identified on the previous orbital vs planetary radius graph. 
 
 ```python
@@ -86,7 +86,7 @@ plt.savefig("kepler.png")
 plt.show()
 ```
 
-<img src="kepler.png" alt="Plot" width="80%"/>
+<img src="images/kepler.png" alt="Plot" width="80%"/>
 
 ## Kepler-452 b 
 The Kepler-452 b, an exoplanet nicknamed 'Earth's Cousin', is 1799 light years away from earth. It orbits a star, Kepler 452, just as earth orbits the sun and has 364.8 days in a year. The planet was discovered in 2015 by the Kepler Space Telescope launched by NASA in 2009 with the mission of identifying earth-sized planets orbiting other stars ouside our galaxy. 
