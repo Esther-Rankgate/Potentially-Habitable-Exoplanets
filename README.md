@@ -1,5 +1,5 @@
 # Potentially Habitable Exoplanets 
-Simple Python task to identify a potentially habitable exoplanet from the NASA planetary archives **_[date of access: 17 May 2024 - [View PS_2024.05.17_06.04.14.csv](PS_2024.05.17_06.04.14.csv)]_**. 
+Simple Python task to identify a potentially habitable exoplanet from the NASA planetary archives **_[date of access: 17 May 2024 - [View PS_2024.05.17_06.04.14.csv](data-and-code/PS_2024.05.17_06.04.14.csv)]_**. 
 
 ## Modules used: 
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=matplotlib&logoColor=white)
@@ -93,4 +93,4 @@ The Kepler-452 b, an exoplanet nicknamed 'Earth's Cousin', is 1799 light years a
 
 *Info@ https://science.nasa.gov/exoplanet-catalog/kepler-452-b/*
 
-To run this project in Jupyter Notebooks: [View Potentially_Habitable_Exoplanets.ipynb](Potentially_Habitable_Exoplanets.ipynb)]
+To run this project in Jupyter Notebooks: [View Potentially_Habitable_Exoplanets.ipynb](data-and-code/Potentially_Habitable_Exoplanets.ipynb)]
